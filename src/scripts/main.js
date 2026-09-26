@@ -1,5 +1,5 @@
 // Imports go first
-import { makePottery } from "./PotteryWheel.js"
+import { makePottery } from "../src/scripts/PotteryWheel.js"
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery(potteryHTML)
