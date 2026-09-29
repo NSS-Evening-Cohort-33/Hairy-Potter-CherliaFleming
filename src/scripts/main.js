@@ -1,6 +1,6 @@
 // Imports go first
-import { makePottery } from "../src/scripts/PotteryWheel.js"
-import { firePottery } from "../src/scripts/Kiln.js"
+import { makePottery } from "../PotteryWheel.js"
+import { firePottery } from "../Kiln.js"
 
 
 
