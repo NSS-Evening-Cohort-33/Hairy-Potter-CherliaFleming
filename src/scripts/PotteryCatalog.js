@@ -10,8 +10,9 @@ export const toSellOrNotToSell = (pottery) => {
             potteryCatalog.push(pottery)
     } else {
             pottery.price = 20
+            potteryCatalog.push(pottery)
     }
-                potteryCatalog.push(pottery)
+                
 
     return pottery
 }

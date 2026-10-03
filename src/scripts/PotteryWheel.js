@@ -2,19 +2,7 @@
  let id = 1
 //Define and export a function named makePottery with parameters shape, weight, and height.
 export const makePottery = (shape, weight, height) => {
-   const pottery = potteryHTML
-
-    let potteryHTML = `<ul>`
-
-    potteryHTML += `<li>id: ${id}</li>
-    <li>shape: ${shape}</li>
-    <li>weight: ${weight}</li>
-    <li>height: ${height}</li>`
-
-    potteryHTML += `</ul>`
-    id++ // helps each piece have an id 
-
-    return potteryHTML
-}
-
-
+    const pottery = {shape, weight, height, id}
+    id++ //increment opperator increments the value id by 1
+    return pottery
+}   

@@ -1,16 +1,23 @@
 import { usePottery } from "./PotteryCatalog.js"
 
 export const PotteryList = () => { 
-    let pottery = usePottery() //holds a copy of sellable pottery objects 
+    const pottery = usePottery() //holds a copy of sellable pottery objects 
     let potteryListHTML = ``
 
    for (const potteryItem of pottery) {
-    <section class="pottery" id="${potteryItem.id}">
-        <h2 class="${potteryItem.shape}">Mug</h2>
+   potteryListHTML+= `
+   <section class="pottery" id="pottery--${potteryItem.id}">
+        <h2 class="pottery__shape">${potteryItem.shape}</h2>
         <div class="pottery__properties">
+        Item weighs ${potteryItem.weight} grams and is ${potteryItem.height} cm in height
             </div>
-            <div class="${potteryItem.price}">
+            <div class="pottery__price">Price is $${potteryItem.price}</div>
                 </section>
+                `
+                }
+
+return potteryListHTML
+}
 
 
     
