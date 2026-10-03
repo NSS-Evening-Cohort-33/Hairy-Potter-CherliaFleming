@@ -8,10 +8,9 @@ export const PotteryList = () => {
     <section class="pottery" id="${potteryItem.id}">
         <h2 class="${potteryItem.shape}">Mug</h2>
         <div class="pottery__properties">
-            Item weighs 3 grams and is 6 cm in height 
             </div>
             <div class="${potteryItem.price}">
                 </section>
-                
+
 
     

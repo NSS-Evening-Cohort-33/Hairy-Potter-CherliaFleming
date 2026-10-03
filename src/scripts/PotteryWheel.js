@@ -3,7 +3,7 @@
 //Define and export a function named makePottery with parameters shape, weight, and height.
 export const makePottery = (shape, weight, height) => {
    const pottery = potteryHTML
-   
+
     let potteryHTML = `<ul>`
 
     potteryHTML += `<li>id: ${id}</li>
